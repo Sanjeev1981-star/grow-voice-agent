@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌱 Grow Mutual Fund - Voice Agent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50">
+    <div class="container mx-auto p-8">
+        <header class="text-center mb-8">
+            <div class="inline-block bg-white rounded-full px-6 py-2 shadow-md mb-4">
+                <h1 class="text-3xl font-bold text-emerald-800">🌱 Grow Mutual Fund</h1>
+            </div>
+            <h2 class="text-2xl font-semibold text-gray-700 mb-2">Voice Advisor Booking System</h2>
+            <p class="text-gray-600">AI-powered appointment scheduling with MCP integration</p>
+        </header>
+
+        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8 border-2 border-emerald-200">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                🎙️ Voice Agent Demo
+            </h3>
+            
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+                <p class="text-blue-800 font-semibold">📌 Demo Mode</p>
+                <p class="text-blue-700 text-sm">Full interactive voice agent available in the main application. This page demonstrates the system architecture.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-emerald-50 rounded-lg p-6 border border-emerald-200">
+                    <h4 class="font-bold text-emerald-800 mb-3">🎯 Supported Intents</h4>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>✓ Book new appointment</li>
+                        <li>✓ Reschedule existing</li>
+                        <li>✓ Cancel appointment</li>
+                        <li>✓ What to prepare</li>
+                        <li>✓ Check availability</li>
+                    </ul>
+                </div>
+
+                <div class="bg-teal-50 rounded-lg p-6 border border-teal-200">
+                    <h4 class="font-bold text-teal-800 mb-3">🔧 MCP Integration</h4>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li>📅 Calendar Hold</li>
+                        <li>📝 Notes Entry</li>
+                        <li>📧 Email Draft</li>
+                        <li>⏳ Approval Gating</li>
+                        <li>🔒 Secure Portal</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-purple-50 rounded-lg p-6 border border-purple-200 mb-6">
+                <h4 class="font-bold text-purple-800 mb-3">📋 Advisory Topics</h4>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-white rounded p-3 text-sm text-gray-700">KYC/Onboarding</div>
+                    <div class="bg-white rounded p-3 text-sm text-gray-700">SIP/Mandates</div>
+                    <div class="bg-white rounded p-3 text-sm text-gray-700">Statements/Tax Docs</div>
+                    <div class="bg-white rounded p-3 text-sm text-gray-700">Withdrawals & Timelines</div>
+                    <div class="bg-white rounded p-3 text-sm text-gray-700">Account Changes/Nominee</div>
+                </div>
+            </div>
+
+            <div class="bg-amber-50 rounded-lg p-6 border border-amber-200">
+                <h4 class="font-bold text-amber-800 mb-3">🔒 Compliance & Safety</h4>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li>⚠️ Investment advice disclaimer</li>
+                    <li>🔐 No PII collected during call</li>
+                    <li>🌍 IST timezone specification</li>
+                    <li>🎫 Booking code generation (NL-AXXXX)</li>
+                    <li>👤 Human-in-the-loop approval</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto mt-8 bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">📸 Sample Output</h3>
+            
+            <div class="space-y-6">
+                <div class="bg-blue-50 border border-blue-300 rounded-lg p-4">
+                    <h5 class="font-bold text-blue-900 mb-2">📅 Calendar Hold</h5>
+                    <p class="text-sm text-gray-700"><strong>Title:</strong> Advisor Q&A — SIP/Mandates — NL-A7342</p>
+                    <p class="text-sm text-gray-700"><strong>Date:</strong> 2024-12-23 (Monday)</p>
+                    <p class="text-sm text-gray-700"><strong>Time:</strong> 10:00 IST</p>
+                    <p class="text-sm text-gray-700"><strong>Status:</strong> <span class="text-orange-600 font-semibold">TENTATIVE</span></p>
+                </div>
+
+                <div class="bg-purple-50 border border-purple-300 rounded-lg p-4">
+                    <h5 class="font-bold text-purple-900 mb-2">📝 Notes Entry</h5>
+                    <p class="text-xs text-gray-700 font-mono bg-white p-2 rounded">2024-12-22 | SIP/Mandates | 2024-12-23 10:00 IST | NL-A7342</p>
+                </div>
+
+                <div class="bg-amber-50 border border-amber-300 rounded-lg p-4">
+                    <h5 class="font-bold text-amber-900 mb-2">📧 Email Draft</h5>
+                    <p class="text-sm text-gray-700 mb-2"><strong>To:</strong> advisors@grow.mfund.in</p>
+                    <p class="text-sm text-gray-700 mb-2"><strong>Subject:</strong> New Appointment Request - NL-A7342</p>
+                    <div class="bg-white p-3 rounded text-xs text-gray-600">
+                        New tentative appointment booked via Voice Agent<br>
+                        Topic: SIP/Mandates | Date: 2024-12-23 10:00 IST
+                    </div>
+                    <p class="text-sm text-amber-600 font-bold mt-2">⏳ Status: Pending Approval</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-8 text-gray-600 text-sm">
+            <p>🌱 Built for Grow Mutual Fund | Voice Agent System v1.0</p>
+            <p class="mt-2">
+                <a href="https://github.com/YOUR-USERNAME/grow-voice-agent" class="text-emerald-600 hover:underline">View on GitHub</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
+```
+
+**Save the file**
+
+---
+
+### 📄 File 3: .gitignore
+
+**Right-click `.gitignore` → Open with Notepad/TextEdit**
+
+Copy this:
+```
+node_modules/
+.DS_Store
+*.log
+.env
+build/
+dist/
+.vscode/

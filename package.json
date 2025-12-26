@@ -1,0 +1,9 @@
+{
+  "name": "grow-voice-agent",
+  "version": "1.0.0",
+  "description": "AI-Powered Advisor Appointment Scheduler for Grow Mutual Fund",
+  "main": "index.html",
+  "keywords": ["voice-agent", "ai", "mcp", "grow-mutual-fund"],
+  "author": "Your Name",
+  "license": "MIT"
+}
